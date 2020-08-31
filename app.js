@@ -19,11 +19,11 @@ app.use(
     saveUninitialized: false,
   })
 );
-
+//mongodb+srv://admin-vijay:<password>@cluster0.z19ga.mongodb.net/<dbname>?retryWrites=true&w=majority
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/linktrDB", {
+mongoose.connect("mongodb+srv://admin-vijay:naruto123@cluster0.z19ga.mongodb.net/linktrDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
